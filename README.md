@@ -1,1 +1,3 @@
 This tool provides an easy and automated to fetch cloudwatch metrics for EC2 instances. When the source file with a list of EC2 instances is uploaded to S3 (under a predecided prefix), a lambda function split.py gets triggered. This lambda splits the main csv file into a separate file per instance and then uploads them to S3 (another prefix). Each file upload operation triggers another lambda, fetch.py, of its own, which then fetches the metrics from Amazon Cloudwatch. The purpose of splitting the file is to enable parallelism and keep the execution time < 15 mins. 
+
+![Workflow](images/workflow.png)
