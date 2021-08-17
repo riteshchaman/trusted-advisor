@@ -1,0 +1,16 @@
+Region,Namespace,InstanceId,ResourceName,MetricsName,Tags,Day1,Day2,Day3,Day4,Day5,Day6,Day7,Day8,Day9,Day10,Day11,Day12,Day13,Day14,Day15
+us-west-2,AWS/EC2,i-g3h40216a3dddddd7b33b1e,i-g3h40216a3dddddd7b33b1e,CPUUtilization,"[{'Key': 'awssupport:patchwork', 'Value': 'patch'}]",0.375,0.423728814,0.466101695,0.333333333,0.409836066,0.5,0.375,0.5,0.541666667,0.532786885,0.375,0.583333333,0.423728814,0.5,0.416666667
+us-west-2,AWS/EC2,i-g3h40216a3dddddd7b33b1e,i-g3h40216a3dddddd7b33b1e,DiskReadOps,"[{'Key': 'awssupport:patchwork', 'Value': 'patch'}]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+us-west-2,AWS/EC2,i-g3h40216a3dddddd7b33b1e,i-g3h40216a3dddddd7b33b1e,NetworkIn,"[{'Key': 'awssupport:patchwork', 'Value': 'patch'}]",87181,141760,154541,65340,62066,66951,87214,106080,159415,110811,76063,82482,125510,109084,74315
+us-west-2,AWS/EC2,i-g3h40216a3dddddd7b33b1e,i-g3h40216a3dddddd7b33b1e,NetworkOut,"[{'Key': 'awssupport:patchwork', 'Value': 'patch'}]",97987,145726,158439,70035,67788,72433,101955,104191,163183,100933,101523,86985,135667,89585,84254
+us-west-2,AWS/EC2,i-g3h40216a3dddddd7b33b1e,i-g3h40216a3dddddd7b33b1e,DiskReadBytes,"[{'Key': 'awssupport:patchwork', 'Value': 'patch'}]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+us-west-2,AWS/EC2,i-g3h40216a3dddddd7b33b1e,i-g3h40216a3dddddd7b33b1e,DiskWriteBytes,"[{'Key': 'awssupport:patchwork', 'Value': 'patch'}]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+us-west-2,AWS/EC2,i-g3h40216a3dddddd7b33b1e,i-g3h40216a3dddddd7b33b1e,NetworkPacketsIn,"[{'Key': 'awssupport:patchwork', 'Value': 'patch'}]",861,556,555,440,1021,493,571,404,585,1114,452,504,740,1152,781
+us-west-2,AWS/EC2,i-g3h40216a3dddddd7b33b1e,i-g3h40216a3dddddd7b33b1e,NetworkPacketsOut,"[{'Key': 'awssupport:patchwork', 'Value': 'patch'}]",727,457,443,396,787,401,477,336,469,853,361,434,579,883,623
+us-west-2,AWS/EBS,i-g3h40216a3dddddd7b33b1e,vol-0db5c37b5fc2e,VolumeWriteBytes,"[{'Key': 'awssupport:patchwork', 'Value': 'patch'}]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+us-west-2,AWS/EBS,i-g3h40216a3dddddd7b33b1e,vol-0db5c37b5fc2e,VolumeReadOps,"[{'Key': 'awssupport:patchwork', 'Value': 'patch'}]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+us-west-2,AWS/EBS,i-g3h40216a3dddddd7b33b1e,vol-0db5c37b5fc2e,VolumeWriteOps,"[{'Key': 'awssupport:patchwork', 'Value': 'patch'}]",169,221,222,175,183,220,222,220,218,176,224,220,232,176,181
+us-west-2,AWS/EBS,i-g3h40216a3dddddd7b33b1e,vol-0db5c37b5fc2e,BurstBalance,"[{'Key': 'awssupport:patchwork', 'Value': 'patch'}]",100,100,100,100,100,100,100,100,100,100,100,100,100,100,100
+us-west-2,AWS/EBS,i-g3h40216a3dddddd7b33b1e,vol-09aaec921b5eba,VolumeReadOps,"[{'Key': 'awssupport:patchwork', 'Value': 'patch'}]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+us-west-2,AWS/EBS,i-g3h40216a3dddddd7b33b1e,vol-09aaec921b5eba,VolumeWriteOps,"[{'Key': 'awssupport:patchwork', 'Value': 'patch'}]",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+us-west-2,AWS/EBS,i-g3h40216a3dddddd7b33b1e,vol-09aaec921b5eba,BurstBalance,"[{'Key': 'awssupport:patchwork', 'Value': 'patch'}]",100,100,100,100,100,100,100,100,100,100,100,100,100,100,100

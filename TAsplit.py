@@ -11,12 +11,8 @@ rows_per_csv = 1
 def lambda_handler(event, context):
     print (event)
     # Get the object from the event and show its content type
-    #bucketname = event['requestPayload']['Records'][0]['s3']['bucket']['name']
     bucketname = event['Records'][0]['s3']['bucket']['name']
-    print (bucketname)
-    #objectname = event['requestPayload']['Records'][0]['s3']['object']['key']
     objectname = event['Records'][0]['s3']['object']['key']
-    print(objectname)
     s3.Bucket(bucketname).download_file(objectname, '/tmp/file.csv')
     
 
@@ -41,10 +37,4 @@ def lambda_handler(event, context):
                 writer.writeheader()
                 for row in page:
                     writer.writerow(row)
-            s3_client.upload_file(local_pcsd_file, 'arubatesting', 'split/'+s3_pcsd_file)
-            
-        linux=os.system('ls -l /tmp')
-        print (linux)
-
-
-
+            s3_client.upload_file(local_pcsd_file, bucketname, 'split/'+s3_pcsd_file)

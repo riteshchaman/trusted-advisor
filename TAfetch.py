@@ -97,5 +97,4 @@ def lambda_handler(event, context):
     
 
 	#Upload Final CSV file to S3 
-    s3_client.upload_file(local_file, 'arubatesting', 'processed/'+instanceid+'-'+enddate.strftime('%Y-%m-%d')+'.csv')	
-		
+    s3_client.upload_file(local_file, bucketname, 'processed/'+instanceid+'-'+enddate.strftime('%Y-%m-%d')+'.csv')
