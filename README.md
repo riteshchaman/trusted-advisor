@@ -2,9 +2,9 @@ To generate "Low utilization Amazon EC2 instances" recommendations, AWS Trusted 
 
 https://aws.amazon.com/premiumsupport/technology/trusted-advisor/best-practice-checklist
 
-This tool provides an easy and automated way to fetch cloudwatch metrics for a list of EC2 instances. When the source file with a list of EC2 instances is uploaded to S3 (under a particular prefix), a lambda function TAsplit.py gets triggered. This lambda splits the main csv file into chunks (one file per instance) and then uploads them to S3 (another prefix). Each file upload operation triggers another lambda fetch.py of its own, which then fetches the Cloudwatch metrics from Amazon Cloudwatch and uploads to S3 (processed folder). The purpose of splitting the file is to enable parallelism and keep the execution time < 15 mins.
+This tool provides an easy and automated way to fetch cloudwatch metrics for a list of EC2 instances. When the source file with a list of EC2 instances is uploaded to S3 (under a particular prefix), a lambda function TAsplit.py gets triggered. This lambda splits the main csv file into chunks (one file per instance) and then uploads them to S3 (another prefix). Each file upload triggers another lambda TAfetch.py of its own, which then fetches the Cloudwatch metrics and uploads to S3 (processed folder). The purpose of splitting the file is to enable parallelism and keep the execution time < 15 mins.
 
-This tool currently fetches all supported CloudWatch metrics for EC2 instances and EBS volumes. The list and the date range (15 days) can be further customized depending on the use case. Please read below link before making any changes 
+This tool currently fetches all supported CloudWatch metrics for EC2 instances and its attached EBS volumes. The list and the date range (default 15 days) can be further customized depending on the use case. Please read below link before making any changes 
 
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/viewing_metrics_with_cloudwatch.html
 
